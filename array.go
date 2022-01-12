@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var nama [3]string // isi jumlah dari array harus di definisikan
+	var nama [3]string // isi jumlah dari array harus di definisikan atau gunakan [...]
 
 	nama[0] = "fair"
 	nama[1] = "sulaiman"
@@ -16,5 +16,6 @@ func main() {
 		2,
 	}
 	fmt.Println(nama)
-	fmt.Println(nilai)
+	fmt.Println(len(nilai))   // panjang jatah array, bukan jumlah isi array
+	fmt.Println(len(nama[0])) // len of string
 }
